@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-achieveJurisdiction"
+    version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AchieveJurisdiction</name>
+    <js-module name="AchieveJurisdiction" src="www/AchieveJurisdiction.js">
+        <clobbers target="cordova.plugins.AchieveJurisdiction" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="config.xml">
+            <feature name="AchieveJurisdiction">
+                <param name="android-package" value="cordova.plugin.AchieveJurisdiction.AchieveJurisdiction" />
+            </feature>
+        </config-file>
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+            <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+        </config-file>
+        <source-file src="src/android/AchieveJurisdiction.java"
+        target-dir="src/cordova/plugin/AchieveJurisdiction/AchieveJurisdiction" />
+    </platform>
+</plugin>

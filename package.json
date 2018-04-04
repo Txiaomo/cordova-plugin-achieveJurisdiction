@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-achievejurisdiction",
+  "version": "1.0.0",
+  "description": "jurisdiction plugin",
+  "cordova": {
+    "id": "cordova-plugin-achieveJurisdiction",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Txiaomo",
+  "license": "ISC"
+}
