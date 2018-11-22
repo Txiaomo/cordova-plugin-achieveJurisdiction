@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-achievejurisdiction"
+    version="1.0.8" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>achievejurisdiction</name>
+    <js-module name="achievejurisdiction" src="www/AchieveJurisdiction.js">
+        <clobbers target="cordova.plugins.achievejurisdiction" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="config.xml">
+            <feature name="achievejurisdiction">
+                <param name="android-package" value="cordova.plugin.achievejurisdiction.AchieveJurisdiction" />
+            </feature>
+        </config-file>
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+            <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+            <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+          <provider
+            android:name="cordova.plugin.achievejurisdiction.FileProvider"
+            android:authorities="${applicationId}.achievejurisdiction.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                tools:replace="android:resource"
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/achievejurisdiction_provider_paths"/>
+            </provider>
+        </config-file>
+        <source-file src="src/android/res/xml/achievejurisdiction_provider_paths.xml" target-dir="res/xml" />
+        <framework src="com.android.support:support-v4:+" />
+        <source-file src="src/android/AchieveJurisdiction.java"
+        target-dir="src/cordova/plugin/achievejurisdiction/AchieveJurisdiction" />
+        <source-file src="src/android/FileProvider.java" target-dir="src/cordova/plugin/achievejurisdiction/FileProvider" />
+    </platform>
+</plugin>
