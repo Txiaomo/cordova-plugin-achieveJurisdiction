@@ -1,6 +1,6 @@
 {
-  "_from": "cordova-plugin-achievejurisdiction@~1.0.8",
-  "_id": "cordova-plugin-achievejurisdiction@1.0.8",
+  "_from": "cordova-plugin-achievejurisdiction@~1.0.9",
+  "_id": "cordova-plugin-achievejurisdiction@1.0.9",
   "_inBundle": false,
   "_integrity": "sha1-AtLtSReMjyb3W4QjOd19+cAPQWs=",
   "_location": "/cordova-plugin-achievejurisdiction",
@@ -8,20 +8,20 @@
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "cordova-plugin-achievejurisdiction@~1.0.8",
+    "raw": "cordova-plugin-achievejurisdiction@~1.0.9",
     "name": "cordova-plugin-achievejurisdiction",
     "escapedName": "cordova-plugin-achievejurisdiction",
-    "rawSpec": "~1.0.8",
+    "rawSpec": "~1.0.9",
     "saveSpec": null,
-    "fetchSpec": "~1.0.8"
+    "fetchSpec": "~1.0.9"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "http://registry.npm.taobao.org/cordova-plugin-achievejurisdiction/download/cordova-plugin-achievejurisdiction-1.0.8.tgz",
+  "_resolved": "http://registry.npm.taobao.org/cordova-plugin-achievejurisdiction/download/cordova-plugin-achievejurisdiction-1.0.9.tgz",
   "_shasum": "02d2ed49178c8f26f75b842339dd7df9c00f416b",
-  "_spec": "cordova-plugin-achievejurisdiction@~1.0.8",
+  "_spec": "cordova-plugin-achievejurisdiction@~1.0.9",
   "_where": "F:\\app-jzt-git",
   "author": {
     "name": "Txiaomo"
@@ -53,5 +53,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.8"
+  "version": "1.0.9"
 }
